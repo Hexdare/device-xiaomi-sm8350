@@ -7,6 +7,7 @@
 COMMON_PATH := device/xiaomi/sm8350-common
 
 OVERRIDE_ENABLE_UFFD_GC := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # A/B
 AB_OTA_UPDATER := true
@@ -63,7 +64,7 @@ DEVICE_MATRIX_FILE := $(COMMON_PATH)/hidl/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(COMMON_PATH)/hidl/vendor_framework_compatibility_matrix.xml \
     $(COMMON_PATH)/hidl/xiaomi_framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/derp/config/device_framework_matrix.xml
 
 DEVICE_MANIFEST_FILE += \
     $(COMMON_PATH)/hidl/manifest_lahaina.xml \
