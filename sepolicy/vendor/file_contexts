@@ -62,3 +62,11 @@
 /data/vendor/mac_addr(/.*)?                                               u:object_r:vendor_wifi_vendor_data_file:s0
 /data/vendor/wlan_logs(/.*)?                                              u:object_r:vendor_wifi_vendor_data_file:s0
 /vendor/bin/nv_mac                                                        u:object_r:vendor_wcnss_service_exec:s0
+
+# Process and system statistics files
+/proc/stat u:object_r:proc_stat:s0
+/sys/class/kgsl/kgsl-3d0/gpu_busy_percentage    u:object_r:vendor_sysfs_kgsl:s0
+/sys/class/kgsl/kgsl-3d0/temp                    u:object_r:vendor_sysfs_kgsl:s0
+/sys/class/kgsl/kgsl-3d0/gpuclk    u:object_r:vendor_sysfs_kgsl_gpuclk:s0
+/sys/class/power_supply/battery/  u:object_r:vendor_sysfs_battery_supply:s0
+/sys/class/graphics/fb0/measured_fps  u:object_r:vendor_sysfs_graphics:s0
